@@ -1,3 +1,4 @@
+we are not pretty sure, so we use netstat -a and netstat -antu
 Active Internet connections (servers and established)
 Proto Recv-Q Send-Q Local Address           Foreign Address         State      
 tcp        0      0 *:ssh                   *:*                     LISTEN     

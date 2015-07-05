@@ -1,3 +1,4 @@
+first use command apt —-installed list
 Listing...
 accountsservice/trusty-updates,now 0.6.35-0ubuntu7.2 amd64 [installed]
 acpid/trusty,now 1:2.0.21-1ubuntu2 amd64 [installed]
