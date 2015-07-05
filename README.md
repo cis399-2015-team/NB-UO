@@ -16,7 +16,7 @@ Qiantian Hao, Heqian Li, Lei Li
 	</tr>
 	<tr>
 		<td>Tianhao Qian</td>
-		<td>tianhao-keypair</td>
+		<td>tianhao-123</td>
 		<td>52.26.103.245</td>
 	</tr>
 	<tr>

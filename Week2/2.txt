@@ -1,0 +1,1 @@
+Go to AWS click on the instance button on the left, there will be a table displaying all the detailsincluding IP addrees, Instance ID, Public DNS, etc.
