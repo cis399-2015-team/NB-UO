@@ -1,0 +1,8 @@
+Provide the output of a command showing how much memory one of your instances has.
+
+command: free -m
+show result:
+             total       used       free     shared    buffers     cached
+Mem:           992        584        408          0        103        396
+-/+ buffers/cache:         83        908
+Swap:            0          0          0

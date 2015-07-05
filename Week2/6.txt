@@ -1,0 +1,23 @@
+Provide the output of a command showing the network interface configuration of your instance (this should show its private IP address).
+
+command:ifconfig
+
+show result:
+
+eth0      Link encap:Ethernet  HWaddr 0a:88:86:81:57:8f
+          inet addr:10.0.5.113  Bcast:10.0.5.255  Mask:255.255.25
+	            inet6 addr: fe80::888:86ff:fe81:578f/64 Scope:Link
+		              UP BROADCAST RUNNING MULTICAST  MTU:9001  Metric:1
+			                RX packets:280491 errors:0 dropped:0 overruns:0 frame:0
+					          TX packets:270230 errors:0 dropped:0 overruns:0 carrier
+						            collisions:0 txqueuelen:1000
+							              RX bytes:50271266 (50.2 MB)  TX bytes:69509281 (69.5 MB
+
+								      lo        Link encap:Local Loopback
+								                inet addr:127.0.0.1  Mask:255.0.0.0
+										          inet6 addr: ::1/128 Scope:Host
+											            UP LOOPBACK RUNNING  MTU:65536  Metric:1
+												              RX packets:1083 errors:0 dropped:0 overruns:0 frame:0
+													                TX packets:1083 errors:0 dropped:0 overruns:0 carrier:0
+															          collisions:0 txqueuelen:0
+																            RX bytes:7321304 (7.3 MB)  TX bytes:7321304 (7.3 MB)
