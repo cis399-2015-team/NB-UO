@@ -1,3 +1,4 @@
+using command sudo apt-get upgrade and sudo apt-get update 
 Reading package lists...
 Building dependency tree...
 Reading state information...
@@ -387,3 +388,31 @@ Setting up overlayroot (0.25ubuntu1.14.04.1) ...
 Processing triggers for libc-bin (2.19-0ubuntu6.6) ...
 Processing triggers for initramfs-tools (0.103ubuntu4.2) ...
 update-initramfs: Generating /boot/initrd.img-3.13.0-48-generic
+Ign http://us-west-2.ec2.archive.ubuntu.com trusty InRelease
+Ign http://us-west-2.ec2.archive.ubuntu.com trusty-updates InRelease
+Hit http://us-west-2.ec2.archive.ubuntu.com trusty Release.gpg
+Hit http://us-west-2.ec2.archive.ubuntu.com trusty-updates Release.gpg
+Hit http://us-west-2.ec2.archive.ubuntu.com trusty Release
+Hit http://us-west-2.ec2.archive.ubuntu.com trusty-updates Release
+Hit http://us-west-2.ec2.archive.ubuntu.com trusty/main Sources
+Hit http://us-west-2.ec2.archive.ubuntu.com trusty/universe Sources
+Hit http://us-west-2.ec2.archive.ubuntu.com trusty/main amd64 Packages
+Hit http://us-west-2.ec2.archive.ubuntu.com trusty/universe amd64 Packages
+Hit http://us-west-2.ec2.archive.ubuntu.com trusty/main Translation-en
+Hit http://us-west-2.ec2.archive.ubuntu.com trusty/universe Translation-en
+Hit http://us-west-2.ec2.archive.ubuntu.com trusty-updates/main Sources
+Hit http://us-west-2.ec2.archive.ubuntu.com trusty-updates/universe Sources
+Hit http://us-west-2.ec2.archive.ubuntu.com trusty-updates/main amd64 Packages
+Hit http://us-west-2.ec2.archive.ubuntu.com trusty-updates/universe amd64 Packages
+Hit http://us-west-2.ec2.archive.ubuntu.com trusty-updates/main Translation-en
+Hit http://us-west-2.ec2.archive.ubuntu.com trusty-updates/universe Translation-en
+Ign http://security.ubuntu.com trusty-security InRelease
+Hit http://security.ubuntu.com trusty-security Release.gpg
+Hit http://security.ubuntu.com trusty-security Release
+Hit http://security.ubuntu.com trusty-security/main Sources
+Hit http://security.ubuntu.com trusty-security/universe Sources
+Hit http://security.ubuntu.com trusty-security/main amd64 Packages
+Hit http://security.ubuntu.com trusty-security/universe amd64 Packages
+Hit http://security.ubuntu.com trusty-security/main Translation-en
+Hit http://security.ubuntu.com trusty-security/universe Translation-en
+Reading package lists...
