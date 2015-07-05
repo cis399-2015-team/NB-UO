@@ -25,3 +25,6 @@ Qiantian Hao, Heqian Li, Lei Li
 		<td>52.26.207.208</td>
 	</tr>
 </table>
+
+<h3>homework link</h3>
+<a href="https://github.com/cis399-2015-team/NB-UO/tree/master/Week2">Week 2</a>
