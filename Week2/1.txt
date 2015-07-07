@@ -1,3 +1,4 @@
-instance ID: lee2, ip address:52.24.68.63
-instance ID: tianhao123, ip address:52.26.103.245
-instance ID: heqian li, ip address:52.26.207.208 
+instance ID: i-b04b9378, private IP: 10.0.5.217
+instance ID: i-88d77e40, private IP: 10.0.5.179
+instance ID: i-3c19b8f4, private Ip: 10.0.5.113 
+ 
