@@ -1,0 +1,34 @@
+2.Stop sshd
+ubuntu@ip-10-0-5-217:/etc/puppet/modules/sshd/manifests$ sudo service ssh stop
+ssh stop/waiting
+ubuntu@ip-10-0-5-217:/etc/puppet/modules/sshd/manifests$ sudo service ssh status
+ssh stop/waiting
+ubuntu@ip-10-0-5-217:/etc/puppet/modules/sshd/manifests$ sudo puppet agent -t
+Info: Retrieving plugin
+Info: Caching catalog for ip-10-0-5-217.us-west-2.compute.internal
+Info: Applying configuration version '1436750271'
+Notice: /Stage[main]/Sshd/Service[ssh]/ensure: ensure changed 'stopped' to 'running'
+Info: /Stage[main]/Sshd/Service[ssh]: Unscheduling refresh on Service[ssh]
+Notice: Finished catalog run in 0.11 seconds
+ubuntu@ip-10-0-5-217:/etc/puppet/modules/sshd/manifests$ sudo service ssh status
+ssh start/running, process 18109
+
+3. Modify or delete /etc/ssh/sshd_config
+root@ip-10-0-5-217:/etc/ssh# sudo puppet agent -t
+Info: Retrieving plugin
+Info: Caching catalog for ip-10-0-5-217.us-west-2.compute.internal
+Info: Applying configuration version '1436764605'
+Notice: /Stage[main]/Sshd/File[/etc/ssh/sshd_config]/ensure: defined content as '{md5}54a61488c29ae2096793edcf61759e1e'
+Notice: Finished catalog run in 0.07 seconds
+
+4. Modify or delete ~ubuntu/.ssh/authorized_keys
+ubuntu@ip-10-0-5-217:~$ sudo puppet agent -t
+Info: Retrieving plugin
+Info: Caching catalog for ip-10-0-5-217.us-west-2.compute.internal
+Info: Applying configuration version '1436764605'
+Notice: /Stage[main]/Sshd/Ssh_authorized_key[LeiLi@LEILI-HP]/ensure: created
+Notice: /Stage[main]/Sshd/Ssh_authorized_key[leili10086@gmail.com]/ensure: created
+Notice: /Stage[main]/Sshd/Ssh_authorized_key[tianhao-keypair]/ensure: created
+Notice: /Stage[main]/Sshd/Ssh_authorized_key[liheqian0408@128-223-223-127-wireless.uoregon.edu]/ensure: created
+Notice: Finished catalog run in 0.07 seconds
+
