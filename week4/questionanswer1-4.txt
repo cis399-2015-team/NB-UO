@@ -3,23 +3,23 @@
 
 
 2.
-Jul 21 00:52:35 ip-10-0-5-179 postfix/smtp[2580]: 8F4484353D: to=<leili10086@gamil.com>, relay=mx7.webfaction.com[75.126.113.165]:25, delay=63376, delays=63376/0.01/0.59/0.06, dsn=4.1.8, status=deferred (host mx7.webfaction.com[75.126.113.165] said: 450 4.1.8 <ubuntu@ip-10-0-5-179.us-west-2.compute.internal>: Sender address rejected: Domain not found (in reply to RCPT TO command))
-Jul 21 01:37:35 ip-10-0-5-179 postfix/qmgr[311]: 01AF5434D6: from=<root@ip-10-0-5-179.us-west-2.compute.internal>, size=433, nrcpt=1 (queue active)
-Jul 21 01:37:36 ip-10-0-5-179 postfix/smtp[3093]: 01AF5434D6: host mx8.webfaction.com[75.126.24.68] said: 450 4.1.8 <root@ip-10-0-5-179.us-west-2.compute.internal>: Sender address rejected: Domain not found (in reply to RCPT TO command)
-Jul 21 01:37:36 ip-10-0-5-179 postfix/smtp[3093]: 01AF5434D6: to=<leili10086@gamil.com>, relay=mx7.webfaction.com[75.126.113.165]:25, delay=184148, delays=184148/0/0.84/0.12, dsn=4.1.8, status=deferred (host mx7.webfaction.com[75.126.113.165] said: 450 4.1.8 <root@ip-10-0-5-179.us-west-2.compute.internal>: Sender address rejected: Domain not found (in reply to RCPT TO command))
-Jul 21 02:02:35 ip-10-0-5-179 postfix/qmgr[311]: 8F4484353D: from=<ubuntu@ip-10-0-5-179.us-west-2.compute.internal>, size=437, nrcpt=1 (queue active)
-Jul 21 02:02:35 ip-10-0-5-179 postfix/smtp[3406]: 8F4484353D: host mx8.webfaction.com[75.126.24.68] said: 450 4.1.8 <ubuntu@ip-10-0-5-179.us-west-2.compute.internal>: Sender address rejected: Domain not found (in reply to RCPT TO command)
-Jul 21 02:02:36 ip-10-0-5-179 postfix/smtp[3406]: 8F4484353D: to=<leili10086@gamil.com>, relay=mx9.webfaction.com[108.168.242.152]:25, delay=67577, delays=67576/0/0.59/0.2, dsn=4.1.8, status=deferred (host mx9.webfaction.com[108.168.242.152] said: 450 4.1.8 <ubuntu@ip-10-0-5-179.us-west-2.compute.internal>: Sender address rejected: Domain not found (in reply to RCPT TO command))
-Jul 21 02:47:35 ip-10-0-5-179 postfix/qmgr[311]: 01AF5434D6: from=<root@ip-10-0-5-179.us-west-2.compute.internal>, size=433, nrcpt=1 (queue active)
-Jul 21 02:47:36 ip-10-0-5-179 postfix/smtp[3739]: 01AF5434D6: host mx7.webfaction.com[75.126.113.165] said: 450 4.1.8 <root@ip-10-0-5-179.us-west-2.compute.internal>: Sender address rejected: Domain not found (in reply to RCPT TO command)
-Jul 21 02:47:36 ip-10-0-5-179 postfix/smtp[3739]: 01AF5434D6: to=<leili10086@gamil.com>, relay=mx9.webfaction.com[108.168.242.152]:25, delay=188349, delays=188348/0/0.71/0.06, dsn=4.1.8, status=deferred (host mx9.webfaction.com[108.168.242.152] said: 450 4.1.8 <root@ip-10-0-5-179.us-west-2.compute.internal>: Sender address rejected: Domain not found (in reply to RCPT TO command))
-Jul 21 03:12:35 ip-10-0-5-179 postfix/qmgr[311]: 8F4484353D: from=<ubuntu@ip-10-0-5-179.us-west-2.compute.internal>, size=437, nrcpt=1 (queue active)
-Jul 21 03:12:35 ip-10-0-5-179 postfix/smtp[4052]: 8F4484353D: host mx9.webfaction.com[108.168.242.152] said: 450 4.1.8 <ubuntu@ip-10-0-5-179.us-west-2.compute.internal>: Sender address rejected: Domain not found (in reply to RCPT TO command)
-Jul 21 03:12:36 ip-10-0-5-179 postfix/smtp[4052]: 8F4484353D: to=<leili10086@gamil.com>, relay=mx7.webfaction.com[75.126.113.165]:25, delay=71777, delays=71776/0/0.6/0.06, dsn=4.1.8, status=deferred (host mx7.webfaction.com[75.126.113.165] said: 450 4.1.8 <ubuntu@ip-10-0-5-179.us-west-2.compute.internal>: Sender address rejected: Domain not found (in reply to RCPT TO command))
-Jul 21 03:57:35 ip-10-0-5-179 postfix/qmgr[311]: 01AF5434D6: from=<root@ip-10-0-5-179.us-west-2.compute.internal>, size=433, nrcpt=1 (queue active)
-Jul 21 03:57:36 ip-10-0-5-179 postfix/smtp[4399]: 01AF5434D6: host mx7.webfaction.com[75.126.113.165] said: 450 4.1.8 <root@ip-10-0-5-179.us-west-2.compute.internal>: Sender address rejected: Domain not found (in reply to RCPT TO command)
-Jul 21 03:57:36 ip-10-0-5-179 postfix/smtp[4399]: 01AF5434D6: to=<leili10086@gamil.com>, relay=mx9.webfaction.com[108.168.242.152]:25, delay=192549, delays=192548/0/0.87/0.06, dsn=4.1.8, status=deferred (host mx9.webfaction.com[108.168.242.152] said: 450 4.1.8 <root@ip-10-0-5-179.us-west-2.compute.internal>: Sender address rejected: Domain not found (in reply to RCPT TO command))
-                       
+Jul 20 22:32:35 ip-10-0-5-179 postfix/smtp[881]: 8F4484353D: to=<leili10086@gamil.com>, relay=mx9.webfaction.com[108.168.242.152]:25, delay=54976, delays=54976/0/0.59/0.23, dsn=4.1.8, status=deferred (host mx9.webfaction.com[108.168.242.152] said: 450 4.1.8 <ubuntu@ip-10-0-5-179.us-west-2.compute.internal>: Sender address rejected: Domain not found (in reply to RCPT TO command))
+Jul 20 22:57:08 ip-10-0-5-179 postfix/smtpd[1252]: connect from hexadecimal.uoregon.edu[128.223.142.97]
+Jul 20 22:57:08 ip-10-0-5-179 postfix/smtpd[1252]: D6840434AA: client=hexadecimal.uoregon.edu[128.223.142.97]
+Jul 20 22:57:08 ip-10-0-5-179 postfix/cleanup[1256]: D6840434AA: message-id=<21933.31948.143507.748047@hexadecimal.uoregon.edu>
+Jul 20 22:57:08 ip-10-0-5-179 postfix/qmgr[311]: D6840434AA: from=<stevev@hexadecimal.uoregon.edu>, size=2236, nrcpt=1 (queue active)
+Jul 20 22:57:08 ip-10-0-5-179 postfix/local[1257]: D6840434AA: to=<ubuntu@ec2-52-26-103-245.us-west-2.compute.amazonaws.com>, relay=local, delay=0.05, delays=0.05/0/0/0, dsn=2.0.0, status=sent (delivered to mailbox)
+Jul 20 22:57:08 ip-10-0-5-179 postfix/qmgr[311]: D6840434AA: removed
+Jul 20 22:57:09 ip-10-0-5-179 postfix/smtpd[1252]: disconnect from hexadecimal.uoregon.edu[128.223.142.97]
+Jul 20 23:00:03 ip-10-0-5-179 postfix/smtpd[1318]: connect from localhost[127.0.0.1]
+Jul 20 23:00:29 ip-10-0-5-179 postfix/anvil[1254]: statistics: max connection rate 1/60s for (smtp:128.223.142.97) at Jul 20 22:57:08
+Jul 20 23:00:29 ip-10-0-5-179 postfix/anvil[1254]: statistics: max connection count 1 for (smtp:128.223.142.97) at Jul 20 22:57:08
+Jul 20 23:00:29 ip-10-0-5-179 postfix/anvil[1254]: statistics: max cache size 1 at Jul 20 22:57:08
+Jul 20 23:01:34 ip-10-0-5-179 postfix/smtpd[1318]: BFD4D434C7: client=localhost[127.0.0.1]
+Jul 20 23:02:10 ip-10-0-5-179 postfix/cleanup[1332]: BFD4D434C7: message-id=<20150720230134.BFD4D434C7@ec2-52-26-103-245.us-west-2.compute.amazonaws.com>
+Jul 20 23:02:10 ip-10-0-5-179 postfix/qmgr[311]: BFD4D434C7: from=<ubuntu@ec2-52-26-103-245.us-west-2.compute.amazonaws.com>, size=2707, nrcpt=1 (queue active)
+Jul 20 23:02:14 ip-10-0-5-179 postfix/smtpd[1318]: disconnect from localhost[127.0.0.1]
+Jul 20 23:02:17 ip-10-0-5-179 postfix/smtp[1333]: BFD4D434C7: to=<stevev@hexadecimal.uoregon.edu>, relay=hexadecimal.uoregon.edu[128.223.142.97]:25, delay=74, delays=68/0/6.1/0.27, dsn=2.0.0, status=sent (250 2.0.0 t6KN2NJq028031 Message accepted for delivery)                       
 
 
 3.http://ec2-52-26-207-208.us-west-2.compute.amazonaws.com/foo.html
