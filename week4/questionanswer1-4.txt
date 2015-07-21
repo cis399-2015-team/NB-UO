@@ -3,14 +3,6 @@
 
 
 2.
-Jul 20 22:32:35 ip-10-0-5-179 postfix/smtp[881]: 8F4484353D: to=<leili10086@gamil.com>, relay=mx9.webfaction.com[108.168.242.152]:25, delay=54976, delays=54976/0/0.59/0.23, dsn=4.1.8, status=deferred (host mx9.webfaction.com[108.168.242.152] said: 450 4.1.8 <ubuntu@ip-10-0-5-179.us-west-2.compute.internal>: Sender address rejected: Domain not found (in reply to RCPT TO command))
-Jul 20 22:57:08 ip-10-0-5-179 postfix/smtpd[1252]: connect from hexadecimal.uoregon.edu[128.223.142.97]
-Jul 20 22:57:08 ip-10-0-5-179 postfix/smtpd[1252]: D6840434AA: client=hexadecimal.uoregon.edu[128.223.142.97]
-Jul 20 22:57:08 ip-10-0-5-179 postfix/cleanup[1256]: D6840434AA: message-id=<21933.31948.143507.748047@hexadecimal.uoregon.edu>
-Jul 20 22:57:08 ip-10-0-5-179 postfix/qmgr[311]: D6840434AA: from=<stevev@hexadecimal.uoregon.edu>, size=2236, nrcpt=1 (queue active)
-Jul 20 22:57:08 ip-10-0-5-179 postfix/local[1257]: D6840434AA: to=<ubuntu@ec2-52-26-103-245.us-west-2.compute.amazonaws.com>, relay=local, delay=0.05, delays=0.05/0/0/0, dsn=2.0.0, status=sent (delivered to mailbox)
-Jul 20 22:57:08 ip-10-0-5-179 postfix/qmgr[311]: D6840434AA: removed
-Jul 20 22:57:09 ip-10-0-5-179 postfix/smtpd[1252]: disconnect from hexadecimal.uoregon.edu[128.223.142.97]
 Jul 20 23:00:03 ip-10-0-5-179 postfix/smtpd[1318]: connect from localhost[127.0.0.1]
 Jul 20 23:00:29 ip-10-0-5-179 postfix/anvil[1254]: statistics: max connection rate 1/60s for (smtp:128.223.142.97) at Jul 20 22:57:08
 Jul 20 23:00:29 ip-10-0-5-179 postfix/anvil[1254]: statistics: max connection count 1 for (smtp:128.223.142.97) at Jul 20 22:57:08
