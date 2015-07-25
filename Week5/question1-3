@@ -2,7 +2,9 @@
 NB-UO-1340980169.us-west-2.elb.amazonaws.com
 
 2.
-
+when shut down one of the instance, the load balancer still runs;
+when shut down both, the webpage turns blank;
+when put both instance back, the service runs again.
 
 
 3.
