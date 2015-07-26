@@ -1,0 +1,81 @@
+1.
+NB-UO-1340980169.us-west-2.elb.amazonaws.com
+
+2.
+when shut down one of the instance, the load balancer still runs;
+when shut down both, the webpage turns blank;
+when put both instance back, the service runs again.
+
+
+3.
+agent1
+10.0.5.203 - - [25/Jul/2015:23:12:36 +0000] "GET /index.html HTTP/1.1" 200 1011 "-" "ELB-HealthChecker/1.0"
+10.0.5.151 - - [25/Jul/2015:23:12:42 +0000] "GET /index.html HTTP/1.1" 200 1011 "-" "ELB-HealthChecker/1.0"
+10.0.5.203 - - [25/Jul/2015:23:13:06 +0000] "GET /index.html HTTP/1.1" 200 1011 "-" "ELB-HealthChecker/1.0"
+10.0.5.151 - - [25/Jul/2015:23:13:12 +0000] "GET /index.html HTTP/1.1" 200 1011 "-" "ELB-HealthChecker/1.0"
+
+agent2
+10.0.5.203 - - [26/Jul/2015:03:02:44 +0000] "GET /index.html HTTP/1.1" 200 728 "-" "ELB-HealthChecker/1.0"
+10.0.5.151 - - [26/Jul/2015:03:02:50 +0000] "GET /index.html HTTP/1.1" 200 728 "-" "ELB-HealthChecker/1.0"
+10.0.5.203 - - [26/Jul/2015:03:03:14 +0000] "GET /index.html HTTP/1.1" 200 728 "-" "ELB-HealthChecker/1.0"
+10.0.5.151 - - [26/Jul/2015:03:03:20 +0000] "GET /index.html HTTP/1.1" 200 728 "-" "ELB-HealthChecker/1.0"
+10.0.5.203 - - [26/Jul/2015:03:03:44 +0000] "GET /index.html HTTP/1.1" 200 728 "-" "ELB-HealthChecker/1.0"
+10.0.5.151 - - [26/Jul/2015:03:03:50 +0000] "GET /index.html HTTP/1.1" 200 728 "-" "ELB-HealthChecker/1.0"
+10.0.5.203 - - [26/Jul/2015:03:04:14 +0000] "GET /index.html HTTP/1.1" 200 728 "-" "ELB-HealthChecker/1.0"
+10.0.5.151 - - [26/Jul/2015:03:04:20 +0000] "GET /index.html HTTP/1.1" 200 728 "-" "ELB-HealthChecker/1.0"
+10.0.5.203 - - [26/Jul/2015:03:04:44 +0000] "GET /index.html HTTP/1.1" 200 728 "-" "ELB-HealthChecker/1.0"
+10.0.5.151 - - [26/Jul/2015:03:04:50 +0000] "GET /index.html HTTP/1.1" 200 728 "-" "ELB-HealthChecker/1.0"
+10.0.5.203 - - [26/Jul/2015:03:05:14 +0000] "GET /index.html HTTP/1.1" 200 728 "-" "ELB-HealthChecker/1.0"
+10.0.5.151 - - [26/Jul/2015:03:05:20 +0000] "GET /index.html HTTP/1.1" 200 728 "-" "ELB-HealthChecker/1.0"
+10.0.5.203 - - [26/Jul/2015:03:05:44 +0000] "GET /index.html HTTP/1.1" 200 728 "-" "ELB-HealthChecker/1.0"
+10.0.5.151 - - [26/Jul/2015:03:05:50 +0000] "GET /index.html HTTP/1.1" 200 728 "-" "ELB-HealthChecker/1.0"
+10.0.5.203 - - [26/Jul/2015:03:06:14 +0000] "GET /index.html HTTP/1.1" 200 728 "-" "ELB-HealthChecker/1.0"
+10.0.5.151 - - [26/Jul/2015:03:06:20 +0000] "GET /index.html HTTP/1.1" 200 728 "-" "ELB-HealthChecker/1.0"
+10.0.5.203 - - [26/Jul/2015:03:06:44 +0000] "GET /index.html HTTP/1.1" 200 728 "-" "ELB-HealthChecker/1.0"
+10.0.5.151 - - [26/Jul/2015:03:06:50 +0000] "GET /index.html HTTP/1.1" 200 728 "-" "ELB-HealthChecker/1.0"
+10.0.5.203 - - [26/Jul/2015:03:07:14 +0000] "GET /index.html HTTP/1.1" 200 728 "-" "ELB-HealthChecker/1.0"
+10.0.5.151 - - [26/Jul/2015:03:07:20 +0000] "GET /index.html HTTP/1.1" 200 728 "-" "ELB-HealthChecker/1.0"
+10.0.5.203 - - [26/Jul/2015:03:07:44 +0000] "GET /index.html HTTP/1.1" 200 728 "-" "ELB-HealthChecker/1.0"
+10.0.5.151 - - [26/Jul/2015:03:07:50 +0000] "GET /index.html HTTP/1.1" 200 728 "-" "ELB-HealthChecker/1.0"
+10.0.5.203 - - [26/Jul/2015:03:08:14 +0000] "GET /index.html HTTP/1.1" 200 728 "-" "ELB-HealthChecker/1.0"
+10.0.5.151 - - [26/Jul/2015:03:08:20 +0000] "GET /index.html HTTP/1.1" 200 728 "-" "ELB-HealthChecker/1.0"
+10.0.5.203 - - [26/Jul/2015:03:08:44 +0000] "GET /index.html HTTP/1.1" 200 728 "-" "ELB-HealthChecker/1.0"
+10.0.5.151 - - [26/Jul/2015:03:08:50 +0000] "GET /index.html HTTP/1.1" 200 728 "-" "ELB-HealthChecker/1.0"
+10.0.5.203 - - [26/Jul/2015:03:09:14 +0000] "GET /index.html HTTP/1.1" 200 728 "-" "ELB-HealthChecker/1.0"
+10.0.5.151 - - [26/Jul/2015:03:09:20 +0000] "GET /index.html HTTP/1.1" 200 728 "-" "ELB-HealthChecker/1.0"
+10.0.5.203 - - [26/Jul/2015:03:09:44 +0000] "GET /index.html HTTP/1.1" 200 728 "-" "ELB-HealthChecker/1.0"
+10.0.5.151 - - [26/Jul/2015:03:09:50 +0000] "GET /index.html HTTP/1.1" 200 728 "-" "ELB-HealthChecker/1.0"
+10.0.5.203 - - [26/Jul/2015:03:10:14 +0000] "GET /index.html HTTP/1.1" 200 728 "-" "ELB-HealthChecker/1.0"
+10.0.5.151 - - [26/Jul/2015:03:10:20 +0000] "GET /index.html HTTP/1.1" 200 728 "-" "ELB-HealthChecker/1.0"
+
+4
+#agent: heqianli 
+class heqianli_html {
+	file { "/var/www/html/index.html":
+                recurse => true,
+		mode => 644,
+		owner => "root",
+		group => "root",
+		source => "/etc/puppet/modules/heqianli_html/files/index.html"
+	}
+}
+#agent: leili
+class leili_html {
+	file { "/var/www/html/index.html":
+		recurse => true,
+		mode => 644,
+		owner => "root",
+		group => "root",
+		source => "/etc/puppet/modules/leili_html/files/index.html"
+	}
+}
+#puppetmaster: tianhaoqian
+class tianhaoqian_html {
+	file { "/var/www/html/index.html":
+		recurse => true,
+		mode => 644,
+		owner => "root",
+		group => "root",
+		source => "/etc/puppet/modules/tianhaoqian_html/files/index.html"
+	}
+}
