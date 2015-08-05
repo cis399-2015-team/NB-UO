@@ -1,0 +1,13 @@
+1. concrete goals for your project, and methods of testing and verification you will apply to determine whether those goals were met
+goals is to build a personal website by apache2 and this website can read and display the file information and data for our instance.
+method of testing is open the browser to check the information if display on our website when we log in the our instance.
+2. a discussion of your project's effect on its user population, and the user support issues it might raise
+we want our project effect on administrator
+
+3.a discussion of security issues relevant to your project
+our project may expose our security  information of our instance. ex(ip address, user name or password etc)
+
+4. a discussion of the work needed to complete the project and what might be needed to maintain it for continued future use, and ways that installation and maintenance tasks can be automated
+we need to code html and some php files for our  webpage. And we should make sure ubuntu system and apache2 are running.Using puppet to maintain apache2 and php envirnment running.
+5.documentation of the project, both for the system administration work involved and for your user community
+we will simple link for our documenttation. User and system administration can see our code and how to set up our project  by this link.
