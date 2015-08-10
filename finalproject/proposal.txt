@@ -1,13 +1,14 @@
 1. concrete goals for your project, and methods of testing and verification you will apply to determine whether those goals were met
-goals is to build a personal website by apache2 and this website can read and display the file information and data for our instance.
-method of testing is open the browser to check the information if display on our website when we log in the our instance.
+goals is to install  Zabbix package to track the status of our server and display on the webpage and set trigger when the status is not ok then send alarm message to us.
+method of testing is open the browser to log in the management webpage of zabbix to check if zabix track and collect information for our server. We check the email that if recieve the alarm message from zabbix. 
 2. a discussion of your project's effect on its user population, and the user support issues it might raise
-we want our project effect on administrator
+User populations will be server administor or anyone want to track information of server from webpage and get alarm when server has some problems. User might forget the password. 
 
 3.a discussion of security issues relevant to your project
-our project may expose our security  information of our instance. ex(ip address, user name or password etc)
+There won't be any security issues we can find it relevant to our project right now. 
 
 4. a discussion of the work needed to complete the project and what might be needed to maintain it for continued future use, and ways that installation and maintenance tasks can be automated
-we need to code html and some php files for our  webpage. And we should make sure ubuntu system and apache2 are running.Using puppet to maintain apache2 and php envirnment running.
+We need to install packages of Zabbix by puppet script. We need to set up useraccout and password for Zabbix. We need to maintain our http server working. And we need to modify config files for sending alram to users. We need to make sure Zabbix, php, sender and mysql working.
 5.documentation of the project, both for the system administration work involved and for your user community
-we will simple link for our documenttation. User and system administration can see our code and how to set up our project  by this link.
+We will provide a simple link for Zabbix official website that can help future system admins know how to set it.
+Most of work will set up on the puppet.
