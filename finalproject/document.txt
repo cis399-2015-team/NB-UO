@@ -1,0 +1,62 @@
+1.
+Goals and concerns:
+Our final project is to use Zabbix to monitor and track the status of various network services, servers, and other network hardware.
+More specifically, we would like to focus on the system report, which sends users general information about system and network condition
+by setting up triggers and actions.
+
+Verification;
+We successfully receive system alarm emails from. The alarms are optional that might be set up by users. For example, users can set up
+login information alarm that an notification email is created whenever someone login to zabbix. 
+
+2.
+System administrators might be interested in our project for the purpose of monitoring system, hard ward, and net work condition.
+One important issue for users and administrators is to remember the account password. If somebody unfortunately forget the password, the 
+only thing we can do is to restart zabbix service. Another issue, as you mentioned in class, is that users need to 
+set up appropriate amount of monitored data to avoid memory over use.
+
+3.
+The only security issued involved in our project is the admin password since administrator has access to modify actions, set up triggers
+, etc. Since zabbix stored data by sql, in order to keep the password safe, setting up another password for sql is necessary. However, there
+still existing a problem that the password for administrator and guest users are shown in hashcode in sql tables. It is still possible for 
+hackers to get password of administrators by deciphering those hashcode. 
+
+4.
+First of all, anyone whoever wants to use this service need to install sql, zabbix service, zabbix agent, apache2, and php. Then edit
+php configuration for zabbix frontend. Users need to write some puppet modules to make sure all the services above are running. users should also need to use version control software to keep puppet server updated. 
+
+5.
+system administration work:
+step 0: Install
+for the Zabbix server
+install: wget http://repo.zabbix.com/zabbix/2.2/debian/pool/main/z/zabbix-release/zabbix-release_2.2-1+squeeze_all.deb
+		 dpkg -i zabbix-release_2.2-1+squeeze_all.deb
+		 apt-get update
+		 apt-get install zabbix-server-mysql zabbix-frontend-php
+		 modify configure file and start zabbix server: https://www.zabbix.com/documentation/2.2/manual/installation/install_from_packages
+for the Zabbix agent
+		 wget http://repo.zabbix.com/zabbix/2.2/debian/pool/main/z/zabbix-release/zabbix-release_2.2-1+squeeze_all.deb
+		 dpkg -i zabbix-release_2.2-1+squeeze_all.deb
+		 apt-get update
+		 apt-get install zabbix-agent
+		 modify configure file and start zabbix agent: https://www.zabbix.com/documentation/2.2/manual/installation/install_from_packages
+step 1: account management
+using mysql databases to add/remove/modify account information(all information will store in an databases called "Zabbix")
+
+step 2: host management
+add host from "Configuration" -> "Hosts" -> "create host"
+
+step 3: set triggers
+select a host, then click "triggers" -> "create trigger"
+
+step 4: set Monitioring graphs
+we can set graph on the left hand side of Dashboard 
+
+step 5: set actions and media for user community
+from "Configuration" -> "Actions"
+from "Administration" -> "Media types"
+
+user community:
+users will receive the messages from email, Jabber, SMS and etc when the alarms have been triggered. if they find some issue(password has been changed, CPU has high utilization and etc), they can contact the system administration to fix them.
+  
+For more information, please visit the official page for Zabbix:
+http://www.zabbix.com/documentation/
