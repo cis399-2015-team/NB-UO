@@ -1,0 +1,15 @@
+The report of final project
+
+
+According to our proposal, we did following works.
+
+1. We install mysql and php pacakge for set up the environment for zabbix. We install the zabbix-server and zabbix-agentpackage on our master instance as main server. We set up the webpage to display what kind of date and information zabbix agent collect from our instances. We install the zabbix-agent on our other 2 instances. We change the zabbix-agent configuration to let main server find our agent and collect information and data from our zabbix agent. We set several triggers to monnitor our cpu, memory,disk usage and password change etc.
+
+2. testing 
+We check the zabbix webpage that we set up for display graph and information for our instance. All monitors are working.And we test the trigger we setted. We can recieve warning message by email.
+
+3.Security
+We change the default password that zabbix setted before because it's very simpe and same as any user. Therefore, we think that is a security problem for users, so we change the password at the mysql database.
+
+4.documentation
+We upload document at github at the finalproject. 
